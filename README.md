@@ -1,6 +1,7 @@
 Changed the build.sh file so it will take an input for the "march=".  Examples below
 
 ./build.sh native
+
 ./build.sh core2
 
 cpuminer-opt is a fork of cpuminer-multi by TPruvot with optimizations
