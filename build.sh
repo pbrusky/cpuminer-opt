@@ -18,7 +18,8 @@ rm -f config.status
 # Debian 7.7 / Ubuntu 14.04 (gcc 4.7+)
 #extracflags="$extracflags -Ofast -flto -fuse-linker-plugin -ftree-loop-if-convert-stores"
 
-CFLAGS="-O3 -march=core2 -Wall" CXXFLAGS="$CFLAGS -std=gnu++11" ./configure --with-curl
+echo CFLAGS="-O3 -march=$1 -Wall" CXXFLAGS="$CFLAGS -std=gnu++11" ./configure --with-curl
+CFLAGS="-O3 -march=$1 -Wall" CXXFLAGS="$CFLAGS -std=gnu++11" ./configure --with-curl
 
 make -j 4
 
